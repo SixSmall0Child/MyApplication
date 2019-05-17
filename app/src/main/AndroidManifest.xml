@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taoying.testapplication">
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.TestSlideMainActivity"></activity>
+        <activity android:name=".activity.TestSlideSecondActivity" />
+        <!--android:theme="@style/VATheme"-->
+        <activity
+            android:name=".activity.SelectActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.TestHideMainActivity" />
+        <activity
+            android:name=".activity.TestHideSecondAcitivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:process=":p1"
+            android:taskAffinity="om.example.taoying.testapplication.vt1" />
+    </application>
+
+</manifest>
