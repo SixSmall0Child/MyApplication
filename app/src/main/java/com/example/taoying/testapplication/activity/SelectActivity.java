@@ -12,6 +12,8 @@ import android.view.View;
 
 import com.example.taoying.testapplication.R;
 
+import java.io.File;
+
 public class SelectActivity extends Activity {
     private static final String TAG = "SelectActivity";
     private boolean mFlag = false;//是否想要 SelectActivity成为后台隐藏的acitivity

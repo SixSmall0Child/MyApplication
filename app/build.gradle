@@ -1,7 +1,10 @@
 apply plugin: 'com.android.application'
+//apply plugin: com.tb.plugin.TbJavaPlugin
+//apply plugin: com.tb.plugin.RemoteInstallPlugin
+apply plugin: 'com.dzone.plugin'
 
 android {
-    println("print in android is excuted...")
+//    println("print in android is excuted...")
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.taoying.testapplication"
@@ -17,12 +20,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
-println("print outside is  excuted")
+//println("print outside is  excuted")
 
 dependencies {
-    println("dependencies is excuted...")
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
@@ -31,94 +37,3 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
-
-task testprint{
-    doFirst {
-        println("doFirst testprint task is excuted....")
-    }
-
-    doLast {
-        println("doLast testprint task is excuted....")
-    }
-    println("testprint task is excuted....")
-}
-
-/*class Delegate{
-    def a (){
-        println('print in Delegate#a()')
-    }
-}
-
-def a(){
-    println("print in root a()")
-}
-
-def cl = {
-    a()
-}
-cl.delegate = new Delegate()
-cl.call()*/
-
-//===================================
-
-//def b(Closure closure){
-//    closure.call()
-//}
-//
-//def cl = {
-//    def c = {
-//        println('print in cl closure ..c()')
-//    }
-//    b{
-//        c()
-//    }
-//}
-//
-//cl.call()
-
-
-def b = {
-    println("print in root b()")
-}
-
-class Delegate{
-    def b (){
-        println('print in Delegate#b()')
-    }
-
-    def d (){
-        println('print in Delegate#d()')
-    }
-}
-
-class Foo {
-    def b(){
-        println('print in Foo ...b() ')
-
-    }
-
-    def c(Closure cl){
-        cl.call()
-    }
-    def d(){
-        println('print in Foo ...d() ')
-    }
-    def a = {
-        println('print in Foo ...a() it = '+it)
-        b()
-        def d = {
-            println('print in a closure ...d() ')
-        }
-        c{
-            d()
-        }
-    }
-}
-
-def foo = new Foo()
-foo.a.delegate = new Delegate()
-foo.a.call()
-
-//assemble.doLast {
-//    println("print in dolast assemble")
-//}
