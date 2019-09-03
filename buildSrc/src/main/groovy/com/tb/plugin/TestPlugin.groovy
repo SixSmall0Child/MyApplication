@@ -1,8 +1,8 @@
 package com.tb.plugin
 
+import com.a.b.Constant
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.api.Task
 
 class TestPlugin implements Plugin<Project> {
 
@@ -12,26 +12,31 @@ class TestPlugin implements Plugin<Project> {
             println(variant)
         }
         project.task('testty') {
-            Constant.USERNAME = project.USERNAME
-            Constant.PASSWORD = project.PASSWORD
+            doLast {
 
-            String projectInfo = project.PROJECT_INFO
-            def projInfoArr = projectInfo.split(';')
-            if (projInfoArr.length == 2){
-                Constant.PROJECT = projectInfo.split(';')[0]
-                Constant.PROJECTID = projectInfo.split(';')[1]
-            }else {
-                println('projectInfo incorrect')
+                Constant.USERNAME = project.USERNAME
+                Constant.PASSWORD = project.PASSWORD
+
+                String projectInfo = project.PROJECT_INFO
+                def projInfoArr = projectInfo.split(';')
+                if (projInfoArr.length == 3) {
+                    Constant.PROJECT = projInfoArr[0]
+                    Constant.PROJECTID = projInfoArr[1]
+                    Constant.ZONE = projInfoArr[2]
+                } else {
+                    println('projectInfo incorrect')
+                }
+
+                String phoneIdsGroupsStr = project.PHONE_IDS_GROUPS
+                Constant.PhoneIdsGroups = phoneIdsGroupsStr.split(',')
+                String serverIdsGroupsStr = project.SERVER_IDS_GROUPS
+                Constant.ServerIdsGroups = serverIdsGroupsStr.split(',')
+
+                println("Constant.USERNAME  = ${Constant.USERNAME},Constant.PASSWORD = ${Constant.PASSWORD}," +
+                        "Constant.PROJECT = ${Constant.PROJECT},Constant.PROJECTID = ${Constant.PROJECTID},Constant.ZONE = ${Constant.ZONE}" +
+                        "Constant.PhoneIdsGroups = ${Constant.PhoneIdsGroups},Constant.ServerIdsGroups = ${Constant.ServerIdsGroups}")
+
             }
-
-            String phoneIdsGroupsStr = project.phone_ids_groups
-            Constant.PhoneIdsGroups = phoneIdsGroupsStr.split(',')
-            String serverIdsGroupsStr = project.server_ids_groups
-            Constant.ServerIdsGroups = serverIdsGroupsStr.split(',')
-
-            println("Constant.USERNAME  = ${Constant.USERNAME },Constant.PASSWORD = ${Constant.PASSWORD}," +
-                    "Constant.PROJECT = ${Constant.PROJECT},Constant.PROJECTID = ${Constant.PROJECTID}+" +
-                    "Constant.PhoneIdsGroups = ${Constant.PhoneIdsGroups},Constant.ServerIdsGroups = ${Constant.ServerIdsGroups}")
 
         }
     }
