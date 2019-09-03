@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 //apply plugin: com.tb.plugin.TbJavaPlugin
-//apply plugin: com.tb.plugin.RemoteInstallPlugin
+apply plugin: com.tb.plugin.TestPlugin
 apply plugin: 'com.dzone.plugin'
 
 android {

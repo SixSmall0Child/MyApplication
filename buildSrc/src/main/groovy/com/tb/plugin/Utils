@@ -1,0 +1,11 @@
+package com.tb.plugin
+
+import org.gradle.api.Project
+
+class Utils {
+    Project mProjectRef
+    def static setProject(Project p) {
+        mProjectRef = p
+    }
+
+}

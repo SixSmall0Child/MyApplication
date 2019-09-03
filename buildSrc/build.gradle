@@ -1,0 +1,43 @@
+apply plugin: 'groovy'
+
+
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation gradleApi()
+    implementation localGroovy()
+
+    implementation 'com.android.tools.build:gradle:3.2.0'
+//    implementation 'com.google.code.gson:gson:2.3.1'
+//    implementation group: 'com.huaweicloud', name: 'esdk-obs-java', version: '3.19.7'
+}
+
+
+
+//group='com.tb.plugin'
+//version='1.0.0'
+//archivesBaseName='java-plugin'
+//
+//uploadArchives{
+//    repositories {
+//        mavenDeployer{
+//            repository(url: uri('../tbModulePlugin'))
+//        }
+//    }
+//}
+//
+//gradlePlugin {
+//    plugins {
+//        //此处名字可以随意，下面指定插件id和具体类名
+//        javaPlugin {
+//            id = 'com.tb.tb-plugin'
+//            implementationClass = 'com.tb.plugin.TbJavaPlugin'
+//        }
+//    }
+//}
