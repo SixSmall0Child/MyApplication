@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 apply plugin: com.tb.plugin.TestPlugin
 apply plugin: 'com.dzone.plugin'
 
+
 android {
 //    println("print in android is excuted...")
     compileSdkVersion 28
