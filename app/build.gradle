@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 //apply plugin: com.tb.plugin.TbJavaPlugin
-apply plugin: com.tb.plugin.TestPlugin
-apply plugin: 'com.dzone.plugin'
+apply plugin: com.dzone.plugin.RemoteInstallPlugin
 
 
 android {
@@ -86,365 +85,6 @@ android {
             buildConfigField("String", "TT_VERSION", "\"v2017\"")
             dimension "appInfo"
         }
-        //参数5
-        ADSgTt4 {
-            applicationId "com.soulgame.superwings"
-            versionCode 108
-            versionName "1.0.8"
-            manifestPlaceholders = [
-                    APP_NAME: "超级飞侠学数学"]
-            buildConfigField("String", "AppId", "\"5003390\"")
-            buildConfigField("String", "PosId", "\"803390438\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-        //参数6
-        ADSgTt5 {
-            applicationId "com.soulgame.ggbond"
-            versionCode 107
-            versionName "1.0.7"
-            manifestPlaceholders = [
-                    APP_NAME: "我的猪猪侠"]
-            buildConfigField("String", "AppId", "\"5001652\"")
-            buildConfigField("String", "PosId", "\"801652964\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-        //参数7
-        ADSgTt6 {
-            applicationId "com.moli.minigame.balanceball"
-            versionCode 101
-            versionName "1.0.1"
-            manifestPlaceholders = [
-                    APP_NAME: "我球玩得贼6"]
-            buildConfigField("String", "AppId", "\"5010594\"")
-            buildConfigField("String", "PosId", "\"810594968\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-        //参数12
-        ADSgTt7 {
-            applicationId "com.moli.minigame.bumper.lenovo"
-            versionCode 106
-            versionName "1.0.6"
-            manifestPlaceholders = [
-                    APP_NAME: "欢乐碰碰球-联想"]
-            buildConfigField("String", "AppId", "\"5003258\"")
-            buildConfigField("String", "PosId", "\"803258640\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数2
-        ADSgTt8 {
-            applicationId "com.xunmeng.superguner"
-            versionCode 100
-            versionName "1.0.0"
-            manifestPlaceholders = [
-                    APP_NAME: "翻转吧神枪手"]
-            buildConfigField("String", "AppId", "\"5022484\"")
-            buildConfigField("String", "PosId", "\"822484596\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        // 参数8
-        ADSgTtN1 {
-            applicationId "com.soulgame.superwings.math"
-            versionCode 100
-            versionName "1.0.0"
-            manifestPlaceholders = [
-                    APP_NAME: "ADSgTtN1"]
-            buildConfigField("String", "AppId", "\"5024936\"")
-            buildConfigField("String", "PosId", "\"824936432\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        // 参数 9
-        ADSgTtN2 {
-            applicationId "com.moli.minigame.xxddx"
-            versionCode 100
-            versionName "1.0.0"
-            manifestPlaceholders = [
-                    APP_NAME: "星星点点乐"]
-            buildConfigField("String", "AppId", "\"5025944\"")
-            buildConfigField("String", "PosId", "\"825944327\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        // 参数 10
-        ADSgTtN3 {
-            applicationId "mobi.popsoft.popanimal"
-            versionCode 100
-            versionName "1.0.0"
-            manifestPlaceholders = [
-                    APP_NAME: "疯狂点点消"]
-            buildConfigField("String", "AppId", "\"5026032\"")
-            buildConfigField("String", "PosId", "\"826032210\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        // 参数 11
-        ADSgTtN4 {
-            applicationId "com.soulgame.sea"
-            versionCode 100
-            versionName "1.0.0"
-            manifestPlaceholders = [
-                    APP_NAME: "ADSgTtN4"]
-            buildConfigField("String", "AppId", "\"5026053\"")
-            buildConfigField("String", "PosId", "\"826053241\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        // 参数 13
-        ADSgTtN5 {
-            applicationId "com.soulgame.slithersg.wdj"
-            versionCode 521
-            versionName "5.2.1"
-            manifestPlaceholders = [
-                    APP_NAME: "贪吃蛇大战-豌豆荚"]
-            buildConfigField("String", "AppId", "\"5026660\"")
-            buildConfigField("String", "PosId", "\"826660500\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        // 参数 14
-        ADSgTtN6 {
-            applicationId "com.soulgame.slithersg.uc"
-            versionCode 521
-            versionName "5.2.1"
-            manifestPlaceholders = [
-                    APP_NAME: "贪吃蛇大战-UC"]
-            buildConfigField("String", "AppId", "\"5026673\"")
-            buildConfigField("String", "PosId", "\"826673440\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-        //参数15
-        ADSgTtN7 {
-            applicationId "com.soulgame.slithersg.anzhi"
-            versionCode 521
-            versionName "5.2.1"
-            manifestPlaceholders = [
-                    APP_NAME: "贪吃蛇大战-anzhi"]
-            buildConfigField("String", "AppId", "\"5027017\"")
-            buildConfigField("String", "PosId", "\"827017987\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数16
-        ADSgTtN8 {
-            applicationId "com.soulgame.slithersg.lenovo"
-            versionCode 521
-            versionName "5.2.1"
-            manifestPlaceholders = [
-                    APP_NAME: "贪吃蛇-联想"]
-            buildConfigField("String", "AppId", "\"5027022\"")
-            buildConfigField("String", "PosId", "\"827022244\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数17
-        ADSgTtN9 {
-            applicationId "com.soulgame.slithersg.m4399"
-            versionCode 521
-            versionName "5.2.1"
-            manifestPlaceholders = [
-                    APP_NAME: "贪吃蛇-4399"]
-            buildConfigField("String", "AppId", "\"5027023\"")
-            buildConfigField("String", "PosId", "\"827023454\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数18
-        ADSgTtN10 {
-            applicationId "com.soulgame.slithersg.qihu360"
-            versionCode 521
-            versionName "5.2.1"
-            manifestPlaceholders = [
-                    APP_NAME: "贪吃蛇-360"]
-            buildConfigField("String", "AppId", "\"5027025\"")
-            buildConfigField("String", "PosId", "\"827025706\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数19
-        ADSgTtN11 {
-            applicationId "com.soulgame.slithersg.vivo"
-            versionCode 521
-            versionName "5.2.1"
-            manifestPlaceholders = [
-                    APP_NAME: "贪吃蛇vivo"]
-            buildConfigField("String", "AppId", "\"5027032\"")
-            buildConfigField("String", "PosId", "\"827032987\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数20
-        ADSgTtN12 {
-            applicationId "com.soulgame.garfield.vivo"
-            versionCode 129
-            versionName "1.2.9"
-            manifestPlaceholders = [
-                    APP_NAME: "加菲猫vivo"]
-            buildConfigField("String", "AppId", "\"5027861\"")
-            buildConfigField("String", "PosId", "\"827861563\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数21
-        ADSgTtN13 {
-            applicationId "com.soulgame.garfield.meizu"
-            versionCode 129
-            versionName "1.2.9"
-            manifestPlaceholders = [
-                    APP_NAME: "加菲猫meizu"]
-            buildConfigField("String", "AppId", "\"5027862\"")
-            buildConfigField("String", "PosId", "\"827862585\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数22
-        ADSgTtN14 {
-            applicationId "com.soulgame.garfield.uc"
-            versionCode 129
-            versionName "1.2.9"
-            manifestPlaceholders = [
-                    APP_NAME: "加菲猫uc"]
-            buildConfigField("String", "AppId", "\"5027863\"")
-            buildConfigField("String", "PosId", "\"827863674\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数23
-        ADSgTtN15 {
-            applicationId "com.soulgame.garfield.wdj"
-            versionCode 129
-            versionName "1.2.9"
-            manifestPlaceholders = [
-                    APP_NAME: "加菲猫wdj"]
-            buildConfigField("String", "AppId", "\"5027864\"")
-            buildConfigField("String", "PosId", "\"827864926\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数24
-        ADSgTtN16 {
-            applicationId "com.soulgame.garfield.m4399"
-            versionCode 129
-            versionName "1.2.9"
-            manifestPlaceholders = [
-                    APP_NAME: "加菲猫wdj"]
-            buildConfigField("String", "AppId", "\"5027866\"")
-            buildConfigField("String", "PosId", "\"827866210\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数25
-        ADSgTtN17 {
-            applicationId "com.soulgame.garfield.anzhi"
-            versionCode 129
-            versionName "1.2.9"
-            manifestPlaceholders = [
-                    APP_NAME: "加菲猫安智"]
-            buildConfigField("String", "AppId", "\"5027867\"")
-            buildConfigField("String", "PosId", "\"827867440\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数26
-        ADSgTtN18 {
-            applicationId "com.soulgame.garfield.lenovo"
-            versionCode 129
-            versionName "1.2.9"
-            manifestPlaceholders = [
-                    APP_NAME: "加菲猫联想"]
-            buildConfigField("String", "AppId", "\"5027869\"")
-            buildConfigField("String", "PosId", "\"827869031\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数27
-        ADSgTtN27 {
-            applicationId "com.moli.xdxg"
-            versionCode 110
-            versionName "1.1.0"
-            manifestPlaceholders = [
-                    APP_NAME: "心动小狗-360"]
-            buildConfigField("String", "AppId", "\"5028389\"")
-            buildConfigField("String", "PosId", "\"828389549\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数28
-        ADSgTtN28 {
-            applicationId "com.moli.xdxg.lenovo"
-            versionCode 110
-            versionName "1.1.0"
-            manifestPlaceholders = [
-                    APP_NAME: "心动小狗-联想"]
-            buildConfigField("String", "AppId", "\"5028382\"")
-            buildConfigField("String", "PosId", "\"828382221\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数29
-        ADSgTtN29 {
-            applicationId "com.moli.xdxg.huawei"
-            versionCode 110
-            versionName "1.1.0"
-            manifestPlaceholders = [
-                    APP_NAME: "心动小狗-华为"]
-            buildConfigField("String", "AppId", "\"5028380\"")
-            buildConfigField("String", "PosId", "\"828380113\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数30
-        ADSgTtN30 {
-            applicationId "com.moli.xdxg.vivo"
-            versionCode 110
-            versionName "1.1.0"
-            manifestPlaceholders = [
-                    APP_NAME: "心动小狗-vivo"]
-            buildConfigField("String", "AppId", "\"5028379\"")
-            buildConfigField("String", "PosId", "\"828379061\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
-
-        //参数31
-        ADSgTtN31 {
-            applicationId "com.moli.xdxg.uc"
-            versionCode 110
-            versionName "1.1.0"
-            manifestPlaceholders = [
-                    APP_NAME: "心动小狗-uc"]
-            buildConfigField("String", "AppId", "\"5028377\"")
-            buildConfigField("String", "PosId", "\"828377312\"")
-            buildConfigField("String", "TT_VERSION", "\"v2017\"")
-            dimension "appInfo"
-        }
     }
 
     variantFilter { variant ->
@@ -477,3 +117,74 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+task makeAllBuildVariantsStr {
+    doLast {
+        String retStr = ''
+        project.android.applicationVariants.all { variant ->
+            if (variant.buildType.name == 'release') {
+                retStr = retStr + variant.name + ','
+            }
+        }
+        retStr = retStr.substring(0, retStr.length() - 1)
+        println("retStr = ${retStr}")
+    }
+}
+
+task ta {
+    doLast {
+        println('print in ta')
+    }
+}
+
+task tb {
+    doLast {
+        println('print in tb')
+    }
+}
+
+task tc {
+    doLast {
+        println('print in tc')
+    }
+}
+
+
+tb.dependsOn(ta)
+tc.dependsOn(tb)
+
+/*project.ext.appIds="tech.easily"
+
+task testhaha {
+    doLast {
+       project.extensions.add("appIds","21")
+    }
+}
+
+task testhehe {
+    doLast {
+        println ("appIds = ${ project.ext.appIds } ")
+    }
+}*/
+
+def taskIds = 0
+task bbb{
+    doLast{
+        taskIds = taskIds + "6"
+        println("TASK_IDS = " + taskIds)
+    }
+}
+
+task aaa {
+    doLast {
+        String a = "\$packageName\$am broadcast -a com.dzone.cpad_COMMAND_ACTION -e cmd install -e pkg \$packageName\$"
+        String ret1 = a.replace("\$packageName\$","mmm")
+        println("ret1 = ${ret1}")
+        String b = "\$packageName\$am broadcast -a com.dzone.cpad_COMMAND_ACTION -e cmd install -e pkg \$packageName\$"
+        String ret2 = b.replace("\$packageName\$","nnn")
+        println("ret2 = ${ret2}")
+    }
+}
+
+
+
